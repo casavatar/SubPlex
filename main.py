@@ -87,9 +87,10 @@ def translate_file(name, lenguaje):
                         new_sub.write(x) 
             new_sub.close()
 
-    except OSError as err:
-        print("Error: (0)".format(err))
-    return
+        print("Translation completed successfully.") 
+
+    except Exception as e: 
+        print("Error occurred: {}".format(e))
 
 # main function
 if __name__ == '__main__':
